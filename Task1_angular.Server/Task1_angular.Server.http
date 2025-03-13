@@ -1,0 +1,6 @@
+@Task1_angular.Server_HostAddress = http://localhost:5264
+
+GET {{Task1_angular.Server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
