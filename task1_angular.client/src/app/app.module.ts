@@ -10,6 +10,13 @@ import { LoginComponent } from './login/login.component';
 import { CategoriesComponent } from './categories/categories.component';
 import { ProductsComponent } from './products/products.component';
 import { ProductdComponent } from './productd/productd.component';
+import { AddcategoryComponent } from './Admin/addcategory/addcategory.component';
+import { AddproductComponent } from './Admin/addproduct/addproduct.component';
+import { ShowproductComponent } from './Admin/showproduct/showproduct.component';
+import { ShowcategoryComponent } from './Admin/showcategory/showcategory.component';
+import { DashboardComponent } from './Admin/dashboard/dashboard.component';
+import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +26,20 @@ import { ProductdComponent } from './productd/productd.component';
     LoginComponent,
     CategoriesComponent,
     ProductsComponent,
-    ProductdComponent
+    ProductdComponent,
+    AddcategoryComponent,
+    AddproductComponent,
+    ShowproductComponent,
+    ShowcategoryComponent,
+    DashboardComponent
   ],
+  // Can't bind to 'routerLink' since it isn't a known property of هاي حلها تضيف RouterModule في import  or make sure you import data correctly 
   imports: [
-    BrowserModule, HttpClientModule,
-    AppRoutingModule
-  ],
+    BrowserModule,
+    HttpClientModule,
+    AppRoutingModule, RouterModule, FormsModule
+  ]
+,
   providers: [],
   bootstrap: [AppComponent]
 })

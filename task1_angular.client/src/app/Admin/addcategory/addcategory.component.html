@@ -1,0 +1,14 @@
+<form #addcatt="ngForm" (ngSubmit)="addnewcat(addcatt.value)">
+  <!--you put onsubmit so it will not work -->
+  <div class="form-group">
+    <label for="exampleFormControlInput1">name</label>
+    <input type="text" class="form-control" name="name" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlInput1" name="img" ngModel>Image</label><!--without u-->
+    <input type="text" class="form-control">
+  </div>
+  <br />
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
