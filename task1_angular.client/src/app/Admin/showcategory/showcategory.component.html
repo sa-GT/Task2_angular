@@ -6,6 +6,7 @@
       <th scope="col">Id</th>
       <th scope="col">name</th>
       <th scope="col">Image</th>
+      <th scope="col">Edit</th>
     </tr>
   </thead>
   <tbody>
@@ -14,6 +15,7 @@
       <td>{{item.id}}</td>
       <td>{{item.name}}</td>
       <td>{{item.img}}</td>
+      <td><a routerLink="/dashboard/editcat/{{item.id}}">Edit</a></td>
     </tr>
   </tbody>
 </table>

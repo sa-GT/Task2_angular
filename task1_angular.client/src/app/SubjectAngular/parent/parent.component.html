@@ -1,0 +1,5 @@
+<p>parent works!</p>
+<app-chiled (newItemEvent)="addItem($event)"></app-chiled><!--event here is like take data from Child(reserved keyWord)-->
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>

@@ -10,6 +10,10 @@ import { ShowcategoryComponent } from './Admin/showcategory/showcategory.compone
 import { ShowproductComponent } from './Admin/showproduct/showproduct.component';
 import { AddcategoryComponent } from './Admin/addcategory/addcategory.component';
 import { AddproductComponent } from './Admin/addproduct/addproduct.component';
+import { ChiledComponent } from './SubjectAngular/chiled/chiled.component';
+import { ParentComponent } from './SubjectAngular/parent/parent.component';
+import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
+import { EditproductComponent } from './Admin/editproduct/editproduct.component';
 
 const routes: Routes = [
   { path: "loginn", component: LoginComponent },
@@ -23,7 +27,12 @@ const routes: Routes = [
       { path: "showpro", component: ShowproductComponent },
       { path: "addcat", component: AddcategoryComponent },
       { path: "addpro", component: AddproductComponent },
-  ] }
+      { path: "editcat/:id", component: EditcategoryComponent },
+      { path: "editpro/:id", component: EditproductComponent }
+    ]
+  },
+  { path: "secound_ch", component: ChiledComponent },
+  { path: "first_pr", component: ParentComponent }
 ];
 
 @NgModule({
