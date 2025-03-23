@@ -1,0 +1,15 @@
+<form #addthh="ngForm" (ngSubmit)="editt(addthh.value)">
+  <div class="form-group">
+    <label for="exampleInputEmail1">name</label>
+    <input type="text" class="form-control" name="name" [(ngModel)]="vD.name" placeholder="Enter Name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Price</label>
+    <input type="text" name="price" [(ngModel)]="vD.price" placeholder="price">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Quantity</label>
+    <input type="text" name="quantity" [(ngModel)]="vD.quantity" placeholder="quantity">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

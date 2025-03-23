@@ -14,6 +14,9 @@ import { ChiledComponent } from './SubjectAngular/chiled/chiled.component';
 import { ParentComponent } from './SubjectAngular/parent/parent.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { DisplayVoucherComponent } from './Task6_voucher/display-voucher/display-voucher.component';
+import { CreateViucherComponent } from './Task6_voucher/create-viucher/create-viucher.component';
+import { EditVoucherComponent } from './Task6_voucher/edit-voucher/edit-voucher.component';
 
 const routes: Routes = [
   { path: "loginn", component: LoginComponent },
@@ -32,7 +35,11 @@ const routes: Routes = [
     ]
   },
   { path: "secound_ch", component: ChiledComponent },
-  { path: "first_pr", component: ParentComponent }
+  { path: "first_pr", component: ParentComponent },
+  //{ path: "display_vo", component: DisplayVoucherComponent },
+  { path: "fff", component: DisplayVoucherComponent },
+  { path: "fs", component: CreateViucherComponent },
+  { path: "edits/:id", component: EditVoucherComponent }
 ];
 
 @NgModule({

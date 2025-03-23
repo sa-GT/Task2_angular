@@ -21,6 +21,9 @@ import { ParentComponent } from './SubjectAngular/parent/parent.component';
 import { ChiledComponent } from './SubjectAngular/chiled/chiled.component';
 import { EditcategoryComponent } from './Admin/editcategory/editcategory.component';
 import { EditproductComponent } from './Admin/editproduct/editproduct.component';
+import { CreateViucherComponent } from './Task6_voucher/create-viucher/create-viucher.component';
+import { EditVoucherComponent } from './Task6_voucher/edit-voucher/edit-voucher.component';
+import { DisplayVoucherComponent } from './Task6_voucher/display-voucher/display-voucher.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,9 @@ import { EditproductComponent } from './Admin/editproduct/editproduct.component'
     ParentComponent,
     ChiledComponent,
     EditcategoryComponent,
-    EditproductComponent
+    EditproductComponent,
+    CreateViucherComponent,
+    EditVoucherComponent, DisplayVoucherComponent
   ],
   // Can't bind to 'routerLink' since it isn't a known property of هاي حلها تضيف RouterModule في import  or make sure you import data correctly 
   imports: [

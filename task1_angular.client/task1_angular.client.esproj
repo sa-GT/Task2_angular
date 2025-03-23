@@ -11,5 +11,6 @@
     <Folder Include="src\Admin\" />
     <Folder Include="src\app\Admin\" />
     <Folder Include="src\app\SubjectAngular\" />
+    <Folder Include="src\app\Task6_voucher\service\" />
   </ItemGroup>
 </Project>
